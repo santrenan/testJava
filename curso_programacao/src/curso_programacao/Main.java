@@ -9,7 +9,7 @@ public class Main {
 		
 		// byte age = 20;
 		double num = 20.3312312312;
-		int num2 = 100;
+		int num2 = 100; 
 		
 		System.out.printf("%.2f%n", num);
 		System.out.printf("%.4f%n", num);
