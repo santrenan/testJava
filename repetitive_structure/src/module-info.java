@@ -1,0 +1,2 @@
+module repetitive_structure {
+}
