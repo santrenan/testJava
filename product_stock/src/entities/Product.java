@@ -2,48 +2,38 @@ package entities;
 
 public class Product {
 	
-	private String name;
+	protected String name;
 	private double price;
 	private int quantity;
 	
-	public Product() {
-		
-	}
 	
 	public Product(String name, double price, int quantity) {
+		super();
 		this.name = name;
 		this.price = price;
 		this.quantity = quantity;
 	}
-	
-	public Product(String name, double price) {
-		this.name = name;
-		this.price = price;
-		// this.quantity = 0; // opcional atribuir = 0 ou usar this.
 
-	}
-	
-	public void setName(String name) {
-		this.name = name;
-	}
-	
 	public String getName() {
 		return name;
 	}
-	
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
 	public double getPrice() {
 		return price;
 	}
-	
+
 	public void setPrice(double price) {
 		this.price = price;
 	}
-	
+
 	public int getQuantity() {
 		return quantity;
 	}
-	
-	
+
 	public double totalValueStock() {
 		return price * quantity;
 	}

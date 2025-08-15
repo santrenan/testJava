@@ -15,10 +15,10 @@ public class Main {
 		System.out.print("Price: ");
 		double price = sc.nextDouble();	
 		
-		/* System.out.print("Quantity in stock: ");
-		int quantity = sc.nextInt(); */	
+		System.out.print("Quantity in stock: ");
+		int quantity = sc.nextInt(); 
 		
-		Product product = new Product(name, price); 
+		Product product = new Product(name, price, quantity); 
 		
 		product.setName("Computer");
 		System.out.println("Update name: " + product.getName());
@@ -31,7 +31,7 @@ public class Main {
 		
 		System.out.println();
 		System.out.print("Enter the number of products to be added in stock: ");
-		int quantity = sc.nextInt();
+		quantity = sc.nextInt();
 		product.addProducts(quantity);
 		
 		System.out.println();
